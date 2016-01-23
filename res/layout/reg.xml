@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:background="@color/main_color"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="@drawable/top_bg"
+                    android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:textSize="18sp"
+                  android:text="用户注册"
+                  android:layout_centerInParent="true"
+                  android:textColor="@color/white"
+                  android:layout_height="wrap_content"/>
+        <ImageView android:layout_width="wrap_content"
+                   android:src="@drawable/back_white"
+                   android:padding="15dp"
+                   android:onClick="back"
+                   android:layout_centerVertical="true"
+                   android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:padding="15dp"
+                    android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:text="国家/地区"
+                  android:textSize="16sp"
+                  android:textColor="@color/textColor"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="中国"
+                  android:layout_alignParentRight="true"
+                  android:textSize="16sp"
+                  android:textColor="@color/btn_blue_normal"
+                  android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <ImageView android:layout_width="match_parent"
+               android:background="@drawable/line"
+               android:layout_marginLeft="25dp"
+               android:layout_marginRight="25dp"
+               android:layout_height="wrap_content"/>
+    <EditText android:layout_width="match_parent"
+              android:layout_marginTop="30dp"
+              android:hint="手机号"
+              android:padding="8dp"
+              android:singleLine="true"
+              android:layout_marginLeft="25dp"
+              android:layout_marginRight="15dp"
+              android:background="@null"
+              android:layout_height="wrap_content"/>
+    <ImageView android:layout_width="match_parent"
+               android:src="@drawable/line"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="55dp">
+        <EditText android:layout_width="wrap_content"
+                  android:layout_marginTop="15dp"
+                  android:layout_weight="1"
+                  android:hint="请输入验证码"
+                  android:padding="8dp"
+                  android:singleLine="true"
+                  android:layout_marginLeft="25dp"
+                  android:layout_marginRight="15dp"
+                  android:background="@null"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="点击获得验证码"
+                  android:padding="8dp"
+                  android:layout_marginRight="25dp"
+                  android:gravity="center"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="@color/white"
+                  android:background="#2c99c4"
+                  android:layout_height="45dp"/>
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent"
+               android:src="@drawable/line"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_height="wrap_content"/>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="注 册"
+            android:onClick="reg"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_bg"
+            android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

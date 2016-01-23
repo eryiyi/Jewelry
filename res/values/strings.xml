@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Jewelry</string>
+    <string name="app_name">某某首饰</string>
+    <string name="loading_text_default">加载中，请稍候</string>
 </resources>
