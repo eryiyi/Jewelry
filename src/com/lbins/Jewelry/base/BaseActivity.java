@@ -15,6 +15,7 @@ import com.android.volley.Response;
 import com.google.gson.Gson;
 import com.lbins.Jewelry.UniversityApplication;
 import com.lbins.Jewelry.upload.MultiPartStringRequest;
+import com.umeng.analytics.MobclickAgent;
 
 import java.io.File;
 import java.util.Map;
@@ -76,14 +77,17 @@ public class BaseActivity extends FragmentActivity{
                 .putString(key, getMyApp().getGson().toJson(value))
                 .commit();
     }
-
-
-    @Override
-    protected void onResume() {
+    public void onResume() {
         super.onResume();
+        MobclickAgent.onResume(this);
         // onresume时，取消notification显示
 //        HXSDKHelper.getInstance().getNotifier().reset();
     }
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
+    }
+
 
     @Override
     protected void onStart() {

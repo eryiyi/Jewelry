@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="#f3f4f8"
+              android:padding="8dp"
+              android:layout_height="wrap_content">
+    <TextView android:layout_width="wrap_content"
+               android:background="@drawable/favour_blue"
+               android:text="制\n图"
+               android:textColor="@color/white"
+               android:textSize="16sp"
+               android:gravity="center"
+               android:id="@+id/title"
+               android:layout_height="wrap_content"/>
+    <ImageView android:layout_width="120dp"
+              android:src="@drawable/mine_favour"
+              android:layout_toRightOf="@+id/title"
+              android:id="@+id/pic"
+              android:padding="3dp"
+              android:layout_marginLeft="3dp"
+              android:scaleType="centerCrop"
+              android:layout_height="wrap_content"/>
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@color/text_color"
+              android:textSize="14sp"
+              android:layout_marginLeft="3dp"
+              android:id="@+id/content"
+              android:layout_toRightOf="@+id/pic"
+              android:layout_centerVertical="true"
+              android:lineSpacingMultiplier="1.2"
+              android:text="这里是详情这里是详情这里是详情这里是详情这里是详情这里是详情这里是详情这里是详情这里是详情"
+              android:layout_height="wrap_content"/>
+</RelativeLayout>

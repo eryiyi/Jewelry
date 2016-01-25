@@ -1,13 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
+              android:background="@drawable/index_bg"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
-    <TextView
-            android:layout_width="fill_parent"
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="@drawable/top_bg"
+                    android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:textColor="@color/white"
+                  android:text="帮助说明"
+                  android:id="@+id/helpText"
+                  android:textSize="14sp"
+                  android:layout_centerVertical="true"
+                  android:padding="8dp"
+                  android:gravity="center"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:textSize="18sp"
+                  android:text="首页"
+                  android:layout_centerInParent="true"
+                  android:textColor="@color/white"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="我的"
+                  android:textColor="@color/white"
+                  android:gravity="center"
+                  android:id="@+id/mine"
+                  android:layout_centerVertical="true"
+                  android:padding="8dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <include
+            android:id="@+id/home_item_photo"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
             android:layout_height="wrap_content"
-            android:text="Hello World, MainActivity"
-            />
+            layout="@layout/search"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/chengpin"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content"
+                           android:src="@drawable/index_one"
+                           android:id="@+id/index_icon_one"
+                           android:layout_centerHorizontal="true"
+                           android:scaleType="fitCenter"
+                           android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="成品"
+                          android:padding="8dp"
+                          android:textColor="@color/btn_blue_normal"
+                          android:textSize="16sp"
+                          android:layout_centerHorizontal="true"
+                          android:layout_below="@+id/index_icon_one"
+                          android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:id="@+id/shoushipj"
+                            android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content"
+                           android:src="@drawable/index_two"
+                           android:layout_centerHorizontal="true"
+                           android:id="@+id/index_icon_two"
+                           android:scaleType="fitCenter"
+                           android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="配件"
+                          android:padding="8dp"
+                          android:layout_centerHorizontal="true"
+                          android:textColor="@color/btn_blue_normal"
+                          android:textSize="16sp"
+                          android:layout_below="@+id/index_icon_two"
+                          android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="0dp"
+                            android:id="@+id/changyonggy"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content"
+                           android:src="@drawable/index_three"
+                           android:id="@+id/index_icon_three"
+                           android:layout_centerHorizontal="true"
+                           android:scaleType="fitCenter"
+                           android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="常用工艺"
+                          android:padding="8dp"
+                          android:textColor="@color/btn_blue_normal"
+                          android:textSize="16sp"
+                          android:layout_centerHorizontal="true"
+                          android:layout_below="@+id/index_icon_three"
+                          android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/mineFavour"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content"
+                           android:src="@drawable/index_four"
+                           android:layout_centerHorizontal="true"
+                           android:id="@+id/index_icon_four"
+                           android:scaleType="fitCenter"
+                           android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="我的收藏"
+                          android:padding="8dp"
+                          android:layout_centerHorizontal="true"
+                          android:textColor="@color/btn_blue_normal"
+                          android:textSize="16sp"
+                          android:layout_below="@+id/index_icon_four"
+                          android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
 

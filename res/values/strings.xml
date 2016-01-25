@@ -2,4 +2,96 @@
 <resources>
     <string name="app_name">某某首饰</string>
     <string name="loading_text_default">加载中，请稍候</string>
+    <string name="cart_error_one">"请选择商品"</string>
+    <string name="save_error_one">保存失败</string>
+    <string name="shifukuan">实付款：</string>
+    <string name="add_address_error_one">收货人名不能为空</string>
+    <string name="add_address_error_two">电话不能为空</string>
+    <string name="add_address_error_three">收货地址不能为空</string>
+    <string name="add_address_error_four">邮编不能为空</string>
+    <string name="zip">邮编:</string>
+    <string name="add_cart_success">商品成功加入购物车</string>
+    <string name="add_cart_is">商品已经加入购物车</string>
+    <string name="zanweiyou">接口暂未有</string>
+    <string name="message_no_data_text">无消息记录</string>
+    <string name="qujiesuan">去结算</string>
+    <string name="no_data">暂无数据</string>
+    <string name="countPrices">￥</string>
+    <string name="select_city">请选择城市</string>
+    <string name="select_area">请选择地区</string>
+    <string name="address_error_one">请输入姓名</string>
+    <string name="address_error_two">请输入电话</string>
+    <string name="address_error_twow">请输入手机</string>
+    <string name="address_error_three">请输入详细地址</string>
+    <string name="address_error_four">请选择地址</string>
+    <string name="order_error_one">请选择商品</string>
+    <string name="order_error_five">请选择支付方式</string>
+    <string name="order_error_six">请选择快递</string>
+    <string name="set_error_one">设置失败</string>
+    <string name="cancle">取消</string>
+    <string name="dianjixuanze">点击选择</string>
+
+    <string name="order_init">元</string>
+    <string name="order_pay">货到付款</string>
+    <string name="order_no">订单号:</string>
+
+    <string name="order_status_one">状态：生成订单</string>
+    <string name="order_status_two">状态：支付订单</string>
+    <string name="order_status_three">状态：取消订单</string>
+    <string name="order_status_four">状态：作废订单</string>
+    <string name="order_status_five">状态：完成订单</string>
+    <string name="order_money_one">应付商品总金额</string>
+    <string name="order_money_two">实付商品总金额</string>
+    <string name="order_money_three">总运费金额</string>
+    <string name="order_money_four">实付运费</string>
+    <string name="order_time_one">付款时间:</string>
+    <string name="order_time_two">发货时间:</string>
+    <string name="order_time_three">下单时间:</string>
+    <string name="order_time_four">订单完成时间:</string>
+    <string name="order_male_zhifu">暂只支持货到付款和普通快递！</string>
+    <string name="bukaifapiao">不开发票</string>
+    <string name="kaifapiao">开发票</string>
+
+    <string name="forget_error_one">"请再次输入密码"</string>
+    <string name="forget_error_two">"两次输入密码不一致"</string>
+    <string name="money">"￥"</string>
+    <string name="phone">"电话："</string>
+    <string name="zhe">"折"</string>
+
+    <string name="dl_title_upload_photo">上传头像</string>
+    <string name="dl_msg_local_upload">本地上传</string>
+    <string name="dl_msg_take_photo">拍照上传</string>
+    <string name="toast_no_support">暂不支持！</string>
+    <string name="setting_nickname">设置昵称</string>
+    <string name="dl_ok">确定</string>
+    <string name="dl_cancel">取消</string>
+    <string name="toast_nick_not_isnull">昵称不能为空！</string>
+    <string name="dl_update_nick">更新昵称</string>
+    <string name="dl_update_photo">更新头像</string>
+    <string name="dl_waiting">请等待...</string>
+    <string name="toast_updatenick_success">更新昵称成功!</string>
+    <string name="toast_updatenick_fail">更新昵称失败!</string>
+    <string name="toast_updatephoto_success">更新头像成功!</string>
+    <string name="toast_updatephoto_fail">更新头像失败!</string>
+    <string name="get_data_error">获得数据失败</string>
+    <string name="get_cart_error">"获得验证码失败"</string>
+    <string name="daojishi_one">"倒计时"</string>
+    <string name="daojishi_two">"秒"</string>
+    <string name="daojishi_three">"重新获取"</string>
+    <string name="please_wait">"请稍后"</string>
+    <string name="address_error_threee">请输入手机</string>
+    <string name="create_time">下单时间:</string>
+    <string name="select_city_address">选择城市</string>
+    <string name="select_country">选择地区</string>
+    <string name="do_success">操作成功</string>
+    <string name="do_fail">操作失败</string>
+    <string name="mimabuyizhi">密码不一致</string>
+    <string name="shangweizhuce">您尚未注册</string>
+    <string name="xitongcuowu">系统错误</string>
+
+    <string name="file_is_error">"文件为空"</string>
+
+    <string name="video_error">"请先录制视频"</string>
+
+
 </resources>
