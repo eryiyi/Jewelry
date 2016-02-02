@@ -1,7 +1,9 @@
 package com.lbins.Jewelry.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.lbins.Jewelry.R;
@@ -44,6 +46,7 @@ public class GongyingActivity extends BaseActivity implements View.OnClickListen
         lstv.setAdapter(adapter);
         no_goods.setVisibility(View.GONE);
         lstv.setVisibility(View.VISIBLE);
+
     }
 
 

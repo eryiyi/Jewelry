@@ -1,7 +1,9 @@
 package com.lbins.Jewelry.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.lbins.Jewelry.R;
@@ -43,6 +45,13 @@ public class MineFavourActivity extends BaseActivity implements View.OnClickList
         lstv.setAdapter(adapter);
         no_goods.setVisibility(View.GONE);
         lstv.setVisibility(View.VISIBLE);
+        lstv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent detailV = new Intent(MineFavourActivity.this, DetailProductActivity.class);
+                startActivity(detailV);
+            }
+        });
     }
 
     @Override

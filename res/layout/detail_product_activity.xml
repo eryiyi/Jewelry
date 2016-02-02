@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:background="@color/main_color"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="@drawable/top_bg"
+                    android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:textSize="18sp"
+                  android:text="产品信息"
+                  android:layout_centerInParent="true"
+                  android:textColor="@color/white"
+                  android:layout_height="wrap_content"/>
+        <ImageView android:layout_width="wrap_content"
+                   android:src="@drawable/back_white"
+                   android:padding="15dp"
+                   android:onClick="back"
+                   android:layout_centerVertical="true"
+                   android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <com.lbins.Jewelry.widget.ReboundScrollView android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/lunbo"
+                        android:layout_height="200dp" >
+                    <android.support.v4.view.ViewPager
+                            android:id="@+id/viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+                    </android.support.v4.view.ViewPager>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="#33000000"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="horizontal"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp" >
+
+                        <LinearLayout
+                                android:id="@+id/viewGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:orientation="horizontal"
+                                android:paddingBottom="1dp"
+                                android:paddingTop="1dp" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView android:layout_width="match_parent"
+                      android:text="详细信息"
+                      android:textSize="16sp"
+                      android:padding="8dp"
+                      android:textColor="@color/text_color_default"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="match_parent"
+                      android:text="图片编号：NGE4756113123\n产品名称：手链\n产品起订量：500个\n产品单价：1元/个\n"
+                      android:textSize="15sp"
+                      android:padding="8dp"
+                      android:textColor="@color/text_color_default"
+                      android:layout_height="wrap_content"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                          android:text="购买数量："
+                          android:layout_marginLeft="8dp"
+                          android:textSize="15sp"
+                          android:textColor="@color/text_color_default"
+                          android:layout_height="wrap_content"/>
+                <RelativeLayout android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content"
+                               android:src="@drawable/goods_jian"
+                               android:layout_toRightOf="@+id/item_pic"
+                               android:layout_below="@+id/item_money"
+                               android:id="@+id/goods_jian"
+                               android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:text="100"
+                              android:textColor="@color/black_text_color"
+                              android:id="@+id/item_num"
+                              android:layout_below="@+id/item_money"
+                              android:layout_toRightOf="@+id/goods_jian"
+                              android:layout_height="wrap_content"/>
+
+                    <ImageView android:layout_width="wrap_content"
+                               android:id="@+id/goods_add"
+                               android:layout_below="@+id/item_money"
+                               android:src="@drawable/goods_add"
+                               android:layout_toRightOf="@+id/item_num"
+                               android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:background="@color/white"
+                          android:layout_marginTop="15dp"
+                          android:padding="8dp"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:text="收藏"
+                          android:textColor="@color/text_color_default"
+                          android:layout_gravity="center"
+                          android:gravity="center"
+                          android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="wrap_content"
+                           android:src="@drawable/line_shu"
+                           android:layout_height="wrap_content"/>
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:textColor="@color/text_color_default"
+                          android:text="比较"
+                          android:layout_gravity="center"
+                          android:gravity="center"
+                          android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="wrap_content"
+                           android:src="@drawable/line_shu"
+                           android:layout_height="wrap_content"/>
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:text="投诉"
+                          android:textColor="@color/text_color_default"
+                          android:layout_gravity="center"
+                          android:gravity="center"
+                          android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="wrap_content"
+                           android:src="@drawable/line_shu"
+                           android:layout_height="wrap_content"/>
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="1"
+                          android:text="留言"
+                          android:textColor="@color/text_color_default"
+                          android:layout_gravity="center"
+                          android:gravity="center"
+                          android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="8dp"
+                          android:background="@color/white"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                           android:drawableTop="@drawable/weixin"
+                           android:layout_weight="1"
+                           android:text="微信"
+                           android:layout_gravity="center"
+                           android:gravity="center"
+                           android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                           android:drawableTop="@drawable/qq2"
+                           android:text="qq"
+                           android:gravity="center"
+                           android:layout_gravity="center"
+                           android:layout_weight="1"
+                           android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                           android:drawableTop="@drawable/youjian"
+                           android:layout_gravity="center"
+                           android:layout_weight="1"
+                           android:text="邮件"
+                           android:gravity="center"
+                           android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="加入购物车"
+                          android:layout_gravity="center"
+                          android:gravity="center"
+                          android:textColor="@color/white"
+                          android:background="@drawable/jiarugouwuche"
+                          android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="立即购买"
+                          android:layout_gravity="center"
+                          android:gravity="center"
+                          android:textColor="@color/white"
+                          android:background="@drawable/lijigoumai"
+                          android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.lbins.Jewelry.widget.ReboundScrollView>
+
+
+
+</LinearLayout>
