@@ -1,36 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/libs/alipaySDK-20150818.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/libs/android-support-v4.jar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/libs/greendao-1.3.0-beta-1.jar" charset="GBK" />
     <file url="file://$PROJECT_DIR$/libs/gson-2.0.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/libs/httpcore-4.3.2.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/libs/httpmime-4.3.5.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/libs/umeng-analytics-v5.2.4.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/libs/universal-image-loader-1.9.2.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/libs/volley.jar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/anim/push_bottom_in.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/anim/push_bottom_out.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/address_select.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/back_white.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/btn_bg.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/dotc.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/dotn.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/goods_add.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/goods_jian.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/gray_line.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/head.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/line.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/order_tel.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/order_tx.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/pic_none.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/qq.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/select_one.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/select_two.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/sina.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/third_login_icon.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/top_bg.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/analyze_empty_bg.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/bg_spinner_shape.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/button_selector_red_one.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/et_bule_bg.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/red_one_n.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/red_one_p.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/spinner1.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/spinner2.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/spinner_item_bg.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/zhuye_item_select.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/changyong_gy_item_xml.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/chengpin_item_xml.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/detail_favour_item_xml.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/gongyi_pic_item_xml.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/gongyi_video_item_xml.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/gongying_item_xml.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/item_address_adapter.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/item_cart.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/item_dialog_pay_goods.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/item_main_viewpage_xml.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/mine_address_activity.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/mine_address_add_activity.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/mine_address_update_activity.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/mine_cart_fragment.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/order_make_activity.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/qiugou_item_xml.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/select_fapiao.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/shoushi_pj_item_xml.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/spinner_bg.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/spinner_item.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/values/attrs.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/values/colors.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/values/dimens.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/values/ids.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/res/values/pull_refresh_strings.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/values/styles.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/UniversityApplication.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/adapter/AnimateFirstDisplayListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/adapter/ChangyonggyAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/adapter/ChengpinLiebiaoAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/adapter/FavourAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/adapter/GongyiPicAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/adapter/GongyiVideoAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/adapter/GongyingAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/adapter/ItemCartAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/adapter/ItemMineAddressAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/adapter/ListviewAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/adapter/OnClickContentItemListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/adapter/QiugouAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/adapter/ShoushipjAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/adapter/ViewPagerAdapterGoods.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/base/ActivityTack.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/base/BaseActivity.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/base/BaseFragment.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/base/InternetURL.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/base/MyBaseFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/dao/DBHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/dao/DaoMaster.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/dao/DaoSession.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/dao/ShoppingCart.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/dao/ShoppingCartDao.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/data/Data.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/data/EmpData.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/data/ShoppingAddressDATA.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/module/AddressObj.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/module/City.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/module/Country.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/module/Emp.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/module/Order.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/module/OrderStr.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/module/OrderVo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/module/Orders.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/module/OrdersForm.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/module/Province.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/pay/Base64.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/pay/PayResult.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/pay/SignUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/ui/MineAddressActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/ui/MineAddressAddActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/ui/MineAddressUpdateActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/ui/MineCartActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/ui/OrderMakeActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/ui/SelectAddressActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/ui/SelectFapiaoActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/ui/UpdatePwrActivity.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/upload/CommonUtil.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/upload/MultiPartRequest.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/upload/MultiPartStack.java" charset="UTF-8" />
@@ -49,7 +133,10 @@
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/util/StringUtil.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/util/TimeUtils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/widget/CircleImageView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/widget/CustomerSpinner.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/widget/PayPopWindow.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/widget/PictureGridview.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/widget/ReboundScrollView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/Jewelry/widget/Spinner_Dialog.java" charset="UTF-8" />
   </component>
 </project>

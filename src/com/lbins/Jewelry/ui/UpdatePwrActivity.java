@@ -1,11 +1,9 @@
 package com.lbins.Jewelry.ui;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,12 +13,10 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.lbins.Jewelry.MainActivity;
+
 import com.lbins.Jewelry.R;
 import com.lbins.Jewelry.base.BaseActivity;
 import com.lbins.Jewelry.base.InternetURL;
-import com.lbins.Jewelry.data.EmpData;
-import com.lbins.Jewelry.module.Emp;
 import com.lbins.Jewelry.util.StringUtil;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -29,31 +25,31 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Administrator on 2016/1/23.
+ * Created by Administrator on 2015/12/30.
  */
-public class Regist extends BaseActivity implements View.OnClickListener {
-
-    Resources res;
+public class UpdatePwrActivity extends BaseActivity implements View.OnClickListener {
+    private EditText surepass;
+    private EditText password;
     private EditText mobile;
     private EditText code;
-    private EditText password;
     private Button btn_code;
     private Button btn;
+    Resources res;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.reg);
+        setContentView(R.layout.update_pwr_activity);
         res = getResources();
-
+        this.findViewById(R.id.back).setOnClickListener(this);
+        surepass = (EditText) this.findViewById(R.id.surepass);
+        password = (EditText) this.findViewById(R.id.password);
         mobile = (EditText) this.findViewById(R.id.mobile);
         code = (EditText) this.findViewById(R.id.code);
-        password = (EditText) this.findViewById(R.id.password);
         btn_code = (Button) this.findViewById(R.id.btn_code);
         btn = (Button) this.findViewById(R.id.btn);
 
         btn_code.setOnClickListener(this);
         btn.setOnClickListener(this);
-        this.findViewById(R.id.back).setOnClickListener(this);
     }
 
     @Override
@@ -65,7 +61,7 @@ public class Regist extends BaseActivity implements View.OnClickListener {
             case R.id.btn_code:
                 //验证码
                 if(StringUtil.isNullOrEmpty(mobile.getText().toString())){
-                    showMsg(Regist.this, "请输入手机号码");
+                    showMsg(UpdatePwrActivity.this, "请输入手机号码");
                     return;
                 }
                 btn_code.setClickable(false);//不可点击
@@ -76,23 +72,33 @@ public class Regist extends BaseActivity implements View.OnClickListener {
             case R.id.btn:
                 //确定
                 if(StringUtil.isNullOrEmpty(mobile.getText().toString())){
-                    showMsg(Regist.this, "请输入手机号码");
+                    showMsg(UpdatePwrActivity.this, "请输入手机号码");
                     return;
                 }
                 if(StringUtil.isNullOrEmpty(code.getText().toString())){
-                    showMsg(Regist.this, "请输入验证码");
+                    showMsg(UpdatePwrActivity.this, "请输入验证码");
                     return;
                 }
                 if(StringUtil.isNullOrEmpty(password.getText().toString())){
-                    showMsg(Regist.this, "请输入密码");
+                    showMsg(UpdatePwrActivity.this, "请输入密码");
+                    return;
+                }
+                if(StringUtil.isNullOrEmpty(surepass.getText().toString())){
+                    showMsg(UpdatePwrActivity.this, "请输入确认密码");
+                    return;
+                }
+                if(!password.getText().toString().equals(surepass.getText().toString())){
+                    Toast.makeText(UpdatePwrActivity.this, "两次输入密码不一致", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
-                reg();
+                progressDialog = new ProgressDialog(UpdatePwrActivity.this);
+                progressDialog.setIndeterminate(true);
+                progressDialog.show();
+                setpwr();
                 break;
         }
     }
-
 
     void getCard(){
         StringRequest request = new StringRequest(
@@ -106,22 +112,22 @@ public class Regist extends BaseActivity implements View.OnClickListener {
                                 JSONObject jo = new JSONObject(s);
                                 String code =  jo.getString("code");
                                 if(Integer.parseInt(code) == 200) {
-//                                    Toast.makeText(Regist.this, jo.getString("msg") , Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(UpdatePwrActivity.this, jo.getString("msg"), Toast.LENGTH_SHORT).show();
                                 }else {
-                                    Toast.makeText(Regist.this, jo.getString("msg") , Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(UpdatePwrActivity.this, jo.getString("msg"), Toast.LENGTH_SHORT).show();
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
                         } else {
-                            Toast.makeText(Regist.this, R.string.get_cart_error, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(UpdatePwrActivity.this, R.string.get_cart_error, Toast.LENGTH_SHORT).show();
                         }
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError volleyError) {
-                        Toast.makeText(Regist.this, R.string.get_cart_error, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(UpdatePwrActivity.this, R.string.get_cart_error, Toast.LENGTH_SHORT).show();
                     }
                 }
         ) {
@@ -160,10 +166,11 @@ public class Regist extends BaseActivity implements View.OnClickListener {
         }
     }
 
-    void reg(){
+
+    void setpwr(){
         StringRequest request = new StringRequest(
                 Request.Method.POST,
-                InternetURL.REG__URL ,
+                InternetURL.FORGET_PWR__URL ,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String s) {
@@ -172,27 +179,30 @@ public class Regist extends BaseActivity implements View.OnClickListener {
                                 JSONObject jo = new JSONObject(s);
                                 String code =  jo.getString("code");
                                 if(Integer.parseInt(code) == 200) {
-                                    EmpData data = getGson().fromJson(s, EmpData.class);
-                                    saveAccount(data.getData());
-                                    Toast.makeText(Regist.this, "注册成功" , Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(UpdatePwrActivity.this, "密码修改成功", Toast.LENGTH_SHORT).show();
+                                    save("password",  password.getText().toString());
                                     finish();
-                                    //huanxin
-//                                    register(data.getData());
                                 }else {
-                                    Toast.makeText(Regist.this, jo.getString("msg") , Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(UpdatePwrActivity.this, jo.getString("msg"), Toast.LENGTH_SHORT).show();
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
                         } else {
-                            Toast.makeText(Regist.this, R.string.get_cart_error, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(UpdatePwrActivity.this, R.string.get_cart_error, Toast.LENGTH_SHORT).show();
+                        }
+                        if(progressDialog != null){
+                            progressDialog.dismiss();
                         }
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError volleyError) {
-                        Toast.makeText(Regist.this, R.string.get_cart_error, Toast.LENGTH_SHORT).show();
+                        if(progressDialog != null){
+                            progressDialog.dismiss();
+                        }
+                        Toast.makeText(UpdatePwrActivity.this, R.string.get_cart_error, Toast.LENGTH_SHORT).show();
                     }
                 }
         ) {
@@ -201,7 +211,7 @@ public class Regist extends BaseActivity implements View.OnClickListener {
                 Map<String, String> params = new HashMap<String, String>();
                 params.put("user_name" , mobile.getText().toString());
                 params.put("code" , code.getText().toString());
-                params.put("password" , password.getText().toString());
+                params.put("newPassword" , password.getText().toString());
                 return params;
             }
 
@@ -214,31 +224,4 @@ public class Regist extends BaseActivity implements View.OnClickListener {
         };
         getRequestQueue().add(request);
     }
-
-    public void saveAccount(Emp emp) {
-        // 登陆成功，保存用户名密码
-        save("uid", emp.getUid());
-        save("user_name", emp.getUser_name());
-        save("password", password.getText().toString());
-        save("sSalt", emp.getsSalt());
-        save("fMoney", emp.getfMoney());
-        save("fFreezeMoney", emp.getfFreezeMoney());
-        save("sImage", emp.getsImage());
-        save("sNickName", emp.getsNickName());
-        save("sTrueName", emp.getsTrueName());
-        save("sTel", emp.getsTel());
-        save("nMemberPoints", emp.getnMemberPoints());
-        save("fLng", emp.getfLng());
-        save("fLat", emp.getfLat());
-        save("nIsDel", emp.getnIsDel());
-        save("nRegisterDate", emp.getnRegisterDate());
-        save("nUpdateDate", emp.getnUpdateDate());
-
-
-//        Intent intent = new Intent("login_success");
-//        Login.this.sendBroadcast(intent);
-
-
-    }
-
 }

@@ -4,9 +4,23 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 import com.lbins.Jewelry.base.BaseActivity;
+import com.lbins.Jewelry.base.InternetURL;
+import com.lbins.Jewelry.data.EmpData;
 import com.lbins.Jewelry.ui.*;
+import com.lbins.Jewelry.util.StringUtil;
 import com.umeng.update.UmengUpdateAgent;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
     /**
@@ -74,4 +88,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
         }
     }
+
+
+
+
 }

@@ -102,6 +102,7 @@
         <activity android:name=".ui.DetailProductActivity" android:windowSoftInputMode="adjustResize"  android:screenOrientation="portrait"/>
         <activity android:name=".ui.DetailGongyiActivity" android:windowSoftInputMode="adjustResize"  android:screenOrientation="portrait"/>
         <activity android:name=".ui.GongyiXiangjieActivity" android:windowSoftInputMode="adjustResize"  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.UpdatePwrActivity" android:windowSoftInputMode="adjustResize"  android:screenOrientation="portrait"/>
 
 
         <meta-data android:value="56a378bd67e58e42aa0029a8" android:name="UMENG_APPKEY"></meta-data>
