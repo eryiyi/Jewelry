@@ -161,8 +161,8 @@ public class MineActivity extends BaseActivity implements View.OnClickListener{
     }
 
     private void initData() {
-        imageLoader.displayImage( memberObj.getCover(), mine_head, UniversityApplication.options, animateFirstListener);
-        nickname.setText(memberObj.getNick_name());
+        imageLoader.displayImage( memberObj.getCover(), mine_head, UniversityApplication.txOptions, animateFirstListener);
+        nickname.setText(memberObj.getUser_name());
         tel.setText("联系电话：" + memberObj.getMobile());
         reg_num.setText("注册编号：" + memberObj.getRegister_num());
         reg_date.setText("注册日期：" + memberObj.getRegister_date());
